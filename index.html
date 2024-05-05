@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="Style.Css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <Form class="Form">
+            <h2>ESCRIBENOS</h2>
+            <p>
+                ¿Necesitas ayuda para consentir a tu peludo amigo? ¡Estamos 
+                aquí para ti! Contáctanos y hagamos que la vida de tu mascota
+                 sea aún más maravillosa juntos.
+
+            </p>
+
+            <label for="Nombre">Escribe tu nombre</label>
+            <input type="text" id="nombre" class="box">
+            <label for="Correo"> Escribe tu correo </label>
+            <input type="email" id="Correo" class="box">
+            <label for="Mensaje">Escribe tu mensaje</label>
+            <textarea class="box" id="Mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar" class="submit">
+        </Form>
+
+        <div class="Info">
+            <img src="Images/Info-1.svg" class="img-1" alt="">
+            <div class="location">
+                <div class="icons">
+                    <img src="Images/gps.svg" alt="">
+                    <p>Carrera 12 I #8-15</p>
+                </div>
+                <div class="icons">
+                    <img src="Images/number.svg" alt="">
+                    <p>3003564408</p>
+                </div>
+                <div class="icons">
+                    <img src="Images/email.svg" alt="">
+                    <p>MundoPeludo@gmail.com</p>
+                </div>
+            </div>
+
+
+
+            <div class="social">
+                <img src="Images/fa.svg" alt="">
+                <img src="Images/tw.svg" alt="">
+                <img src="Images/ins.svg" alt="">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
