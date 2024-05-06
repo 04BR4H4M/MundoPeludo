@@ -17,6 +17,7 @@
 	</head>
 	<body>
 		<header>
+			<img src="./imagenes/ICONO.jpg" alt="Logo">
 			<h1>Mundo Peludo</h1>
 		</header>
 		<div class="container-items">
@@ -29,11 +30,23 @@
 						alt="producto"
 					/>
 				</figure>
-				<div class="info-product">
+				<div class="info-producto">
 					<h2>Atención Mascotas</h2>
-					<button>Ingresar </button>  
+					<button id="botonIngresar2">Ingresar</button>
 				</div>
+				
+				<script>
+					// Obtener el botón por su id
+					var botonIngresar = document.getElementById("botonIngresar2");
+				
+					// Agregar un evento de clic al botón
+					botonIngresar.addEventListener("click", function() {
+						// Redirigir a la página de Productos
+						window.location.href = "Contenido/atencion.html";
+					});
+				</script>
 			</div>
+
 			<div class="item">
 				<figure>
 					<img
@@ -57,6 +70,7 @@
 					});
 				</script>
 			</div>
+
 			<div class="item">
 				<figure>
 					<img
@@ -64,10 +78,22 @@
 						alt="producto"
 					/>
 				</figure>
-				<div class="info-product">
+				<div class="info-producto1">
 					<h2>Vacunas</h2>
-					<button>Ingresar</button>
+					<button id="botonIngresar3">Ingresar</button>
 				</div>
+				
+				<script>
+					// Obtener el botón por su id
+					var botonIngresar = document.getElementById("botonIngresar3");
+				
+					// Agregar un evento de clic al botón
+					botonIngresar.addEventListener("click", function() {
+						// Redirigir a la página de Productos
+						window.location.href = "Contenido/vacunas.html";
+					});
+				</script>
+			</div>
 			</div>
 
 	</body>

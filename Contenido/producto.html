@@ -11,46 +11,142 @@
 </head>
 <body>
     <header>
+        <a href="../index.html"><img src="../imagenes/ICONO.jpg" alt="Logo"></a>
         <h1>Para Tu Mascota</h1>
         <div class="container-icon" onclick="mostrarCarrito()">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart" onclick="toggleContenidoCarrito()">
+                <!-- Contenido del carrito -->
+                <g id="contenido-carrito" style="display: none;">
+                    <div class="carrito" id="carrito">
+                        <div class="header-carrito"></div>
+                        <div class="carrito-items"></div>
+                        <div class="carrito-total">
+                            <div class="fila">
+                                <strong>Tu Total</strong> <br>
+                                <br>
+                                <span class="carrito-precio-total"></span>
+                            </div>
+                            <br>
+                            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                        </div>
+                    </div>
+                </g>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
             </svg>
-            <div class="count-products">
-                <span id="contador-productos">0</span>
-            </div>
         </div>
     </header>
-
-    <!-- Contenedor del carrito -->
-    <div class="carrito-container" id="carrito">
-        <div class="carrito-items">
-            <!-- Aquí es donde se mostrarán los elementos del carrito -->
-        </div>
-        <div class="carrito-total">
-            <div class="fila">
-                <strong>Tu Total</strong>
-                <span class="carrito-precio-total">$0.00</span>
-            </div>
-            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
-        </div>
-    </div>
-    
     <section class="contenedor">
         <div class="contenedor-items">
             <!-- Contenido de la sección de productos -->
             <div class="item">
                 <figure>
-                    <img src="https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0" alt="" class="img-item">
+                    <img src="" alt="" class="img-item">
                 </figure>
-                <span class="titulo-item"><h2>Atención perros</h2></span>
-                <span class="precio-item">$25.00</span>
+                <span class="titulo-item"><h2>Dispensador de comida para perros</h2></span>
+                <span class="precio-item">$25.000</span> 
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
-            <!-- Agrega más elementos de productos aquí -->
+
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Arenera cubierta doble salida para gatos</h2></span>
+                <span class="precio-item">$10.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Bebedero semi-automático para mascotas</h2></span>
+                <span class="precio-item">$15.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Arnés alitas para mascotas medianas</h2></span>
+                <span class="precio-item">$25.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Cepillo con removedor de pelo para mascotas</h2></span>
+                <span class="precio-item">$14.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Comedero y antireflujo- Aguacate</h2></span>
+                <span class="precio-item">$30.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Maleta o cargador para mascotas</h2></span>
+                <span class="precio-item">$120.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Peineta sacapulgas</h2></span>
+                <span class="precio-item">$20.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Pescado para gatos cachorros y adultos</h2></span>
+                <span class="precio-item">$30.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Pescado al horno para perros adultos</h2></span>
+                <span class="precio-item">$30.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Hueso Comestible</h2></span>
+                <span class="precio-item">$15.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+            <div class="item">
+                <figure>
+                    <img src="" alt="" class="img-item">
+                </figure>
+                <span class="titulo-item"><h2>Rascador Gato Kong</h2></span>
+                <span class="precio-item">$50.000</span> 
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
         </div>
     </section>
-    <script src="../js/carrito.js" async></script>
 
 </body>
 </html>
