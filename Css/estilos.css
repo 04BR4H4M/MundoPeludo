@@ -27,8 +27,15 @@ header {
 header img {
     width: 100px; /* Ancho deseado del logo */
     height: auto; /* Altura automática para mantener la proporción */
+    
 }
 
+/* Estilos para el icono de formulario */
+.formulario-link img {
+    width: 60px;
+    height: 52px;
+    margin-left: 968px;
+}
 
 .count-products {
     position: absolute;
