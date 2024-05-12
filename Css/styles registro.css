@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #e8e8eb;   
+}
+
+body{
+    margin: auto;
+    padding: 2%;
+    background-image: url(../imagenes/fondo\ resgistro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form-register {
+    width: 400px;
+    background: #d6ccd6;
+    padding: 30px;
+    margin-left: 50%;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: calibri;
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #4d34da;
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px; 
+    line-height: 40px;   
+}
+
+.form-register a {
+    color: #4844a9;
+    text-decoration: none;
+}
+
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons { /* Configuracion del boton */
+    width: 100%;
+    background-color: #817ffe;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(30, 11, 202, 0.842);
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+.botons:hover {
+    background-color: #817ffe; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Efecto al hacer clic */
+.botons:active {
+    box-shadow: 0 5px #88888a; /* Cambia la sombra cuando se hace clic */
+    transform: translateY(4px); /* Desplaza el botón hacia abajo */
+}
+
+/* icono sin fondo */
+.ico-prin {
+    width: 150px;
+    height: auto; /* Esto mantiene la proporción original de la imagen */
+    position: absolute; /* Esto permite posicionar la imagen */
+    top: 2px; /* Ajusta la posición vertical */
+    left: 900px; /* Ajusta la posición horizontal */
+}
