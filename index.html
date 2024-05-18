@@ -1,104 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-			
-		/>
-		<title>Mundo Peludo</title>
-		<link rel="stylesheet" href="./Css/estilos.css" />
-		<script src="js/conexion.js" async></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Peludo</title>
+    <link rel="stylesheet" href="./Css/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/6aae45a821.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <header>
+    <img src="./imagenes/ICONO.jpg" alt="Logo">
+    <h1>Mundo Peludo</h1>
+</header>
 
+<!-- Contenedor de elementos -->
+<div class="container-items">
+    <div class="item separate-container1 animate__animated animate__backInUp">
+        <figure>
+            <img src="imagenes/p2.jpeg" alt="producto">
+        </figure>
+        <div class="info-producto">
+            <h2>Atención Mascotas</h2>
+            <button class="botonIngresar2">Ingresar</button>
+        </div>
+    </div>
 
-	</head>
-	<body>
-		<header>
-			<img src="./imagenes/ICONO.jpg" alt="Logo">
-			<a href="./Contenido/Formulario.html" class="formulario-link">
-				<img src="./imagenes/formulario.png" alt="formulario">
-			</a>
-			<h1>Mundo Peludo</h1>
-		</header>
-		
-		<div class="container-items">
-	  <!-- Contenedor de elementos -->
+    <div class="item separate-container2 animate__animated animate__backInUp">
+        <figure>
+            <img src="imagenes/Mascotas2.jpg" alt="producto">
+        </figure>
+        <div class="info-producto">
+            <h2>Para tu Mascota</h2>
+            <button class="botonIngresar">Ingresar</button>
+        </div>
+    </div>
 
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-producto">
-					<h2>Atención Mascotas</h2>
-					<button id="botonIngresar2">Ingresar</button>
-				</div>
-				
-				<script>
-					// Obtener el botón por su id
-					var botonIngresar = document.getElementById("botonIngresar2");
-				
-					// Agregar un evento de clic al botón
-					botonIngresar.addEventListener("click", function() {
-						// Redirigir a la página de Productos
-						window.location.href = "Contenido/atencion.html";
-					});
-				</script>
-			</div>
+    <div class="item separate-container3 animate__animated animate__backInUp">
+        <figure>
+            <img src="https://plus.unsplash.com/premium_photo-1663133496069-2375551a1f77?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="producto">
+        </figure>
+        <div class="info-producto1">
+            <h2>Vacunas</h2>
+            <button class="botonIngresar3">Ingresar</button>
+        </div>
+    </div>
+</div>
 
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Pata tu Mascotas</h2>
-					<button id="botonIngresar">Ingresar</button>
-				</div>
-				
-				<script>
-					// Obtener el botón por su id
-					var botonIngresar = document.getElementById("botonIngresar");
-				
-					// Agregar un evento de clic al botón
-					botonIngresar.addEventListener("click", function() {
-						// Redirigir a la página de Productos
-						window.location.href = "Contenido/producto.html";
-					});
-				</script>
-			</div>
+<script>
+    // Obtener el botón por su clase y asignar eventos de clic
+    var botonesIngresar = document.querySelectorAll(".botonIngresar2, .botonIngresar, .botonIngresar3");
+    
+    // Iterar sobre cada botón y asignar el evento de clic
+    botonesIngresar.forEach(function(boton) {
+        boton.addEventListener("click", function() {
+            // Obtener el destino según el botón
+            var destino;
+            if (boton.classList.contains("botonIngresar2")) {
+                destino = "Contenido/atencion.html";
+            } else if (boton.classList.contains("botonIngresar")) {
+                destino = "Contenido/producto.html";
+            } else if (boton.classList.contains("botonIngresar3")) {
+                destino = "Contenido/vacunas.html";
+            }
+            // Redirigir a la página de destino
+            window.location.href = destino;
+        });
+    });
+</script>
+<div class="despliegue">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+       <a href="./Contenido/Formulario.html" class="fa-solid fa-envelope"></a>
+    </div>
+    <div class="btn-mas">
+        <label for="btn-mas" class="fa-solid fa-plus"></a>
+    </div>
+</div>
 
-			<div class="item">
-				<figure>
-					<img
-						src="https://plus.unsplash.com/premium_photo-1663133496069-2375551a1f77?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-producto1">
-					<h2>Vacunas</h2>
-					<button id="botonIngresar3">Ingresar</button>
-				</div>
-				
-				<script>
-					// Obtener el botón por su id
-					var botonIngresar = document.getElementById("botonIngresar3");
-				
-					// Agregar un evento de clic al botón
-					botonIngresar.addEventListener("click", function() {
-						// Redirigir a la página de Productos
-						window.location.href = "Contenido/vacunas.html";
-					});
-				</script>
-			</div>
-			</div>
-
-	</body>
+</body>
 </html>
