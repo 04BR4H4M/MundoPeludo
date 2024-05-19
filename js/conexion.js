@@ -70,7 +70,7 @@ function actualizarTotalCarrito() {
 
         // Validar que cantidad sea un número entero mayor a cero
         if (!isNaN(cantidad) && cantidad > 0) {
-            total += (precio + cantidad);
+            total += (precio * cantidad)/2;
         }
     }
 
