@@ -6,6 +6,7 @@
     font-family: sans-serif;
 }
 
+
 body {
     margin: 0 auto;
     max-width: 1200px;
@@ -13,23 +14,60 @@ body {
     color: #333;
 }
 
+.vacu header {
+    background: url("../imagenes/vacunas.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 415px;
+}
 
-header {
-    background: url(imagenes/panda.jpg);
-    background-size: cover;
+.aten header {
+    background: url("../imagenes/atencion.jpg");
+    background-size: contain;
     background-position: center;
     height: 300px;
+}
+.prod header {
+    background: url("../imagenes/productos.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 426px;
+}
+.vacu header h1 {
+    text-align: center;
+    font-size: 44px;
+    color: #fff200;
+    padding: 30px 0;
+    font-family: cursive;
+
+}
+.aten header h1 {
+    text-align: center;
+    font-size: 44px;
+    color: #ff176a;
+    padding: 30px 0;
+    font-family: cursive;
+
+}
+
+.prod header h1 {
+    text-align: center;
+    font-size: 44px;
+    color: #f15700;
+    padding: 30px 0;
+    font-family: cursive;
 
 }
 
 header h1 {
     text-align: center;
     font-size: 44px;
-    color: #b066bd;
+    color: #000000;
     padding: 30px 0;
     font-family: cursive;
 
 }
+
 
 .contenedor {
     max-width: 1200px;
