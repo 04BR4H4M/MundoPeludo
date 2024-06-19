@@ -1,0 +1,4 @@
+
+.cerraricon-mensaje:before { content: '\e801'; } /* '' */
+.usuarioicon-mensaje:before { content: '\f061'; } /* '' */
+.mensajeicon-mensaje:before { content: '\f0e0'; } /* '' */
